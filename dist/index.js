@@ -22,7 +22,7 @@ module.exports = React.createClass({
   },
 
   render: function render() {
-    var props = blacklist(this.props, 'children', 'className', 'src', 'type', 'onPlay');
+    var props = blacklist(this.props, 'children', 'className', 'type', 'onPlay');
     props.className = cx(this.props.className, 'videojs', 'video-js vjs-default-skin');
 
     assign(props, {
